@@ -1,0 +1,12 @@
+	responses	next_user
+0	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(30.94036851)}, {'click': 0, 'engagement': array(0.)})	[0.51483868]
+1	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(18.17614574)}, {'click': 0, 'engagement': array(0.)})	[0.46944323]
+2	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(58.66155954)}, {'click': 0, 'engagement': array(0.)})	[0.61689712]
+3	({'click': 0, 'engagement': array(0.)}, {'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(9.84243308)})	[0.51158837]
+4	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(4.83127803)}, {'click': 0, 'engagement': array(0.)})	[0.76871289]
+5	({'click': 0, 'engagement': array(0.)}, {'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(1.51229348)})	[0.4836657]
+6	({'click': 1, 'engagement': array(21.59507447)}, {'click': 0, 'engagement': array(0.)}, {'click': 0, 'engagement': array(0.)})	[0.51941164]
+7	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(4.30586542)}, {'click': 0, 'engagement': array(0.)})	[0.55762332]
+8	({'click': 1, 'engagement': array(39.09568327)}, {'click': 0, 'engagement': array(0.)}, {'click': 0, 'engagement': array(0.)})	[0.6192861]
+9	({'click': 1, 'engagement': array(11.96749771)}, {'click': 0, 'engagement': array(0.)}, {'click': 0, 'engagement': array(0.)})	[0.41390657]
+10	({'click': 0, 'engagement': array(0.)}, {'click': 1, 'engagement': array(8.69260857)}, {'click': 0, 'engagement': array(0.)})	[0.49003035]
