@@ -4,13 +4,13 @@ import argparse
 import numpy as np
 from pathlib import Path
 from vae import *
-from experiment import VAEXperiment
+from vae_experiment import VAEXperiment
 import torch.backends.cudnn as cudnn
 from pytorch_lightning import Trainer
 from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.utilities.seed import seed_everything
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from dataset import VAEDataset
+from vae_dataset import VAEDataset
 from pytorch_lightning.strategies import DDPStrategy
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
