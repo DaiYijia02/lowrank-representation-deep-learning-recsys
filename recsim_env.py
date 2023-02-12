@@ -128,7 +128,16 @@ class LTSResponse(user.AbstractResponse):
         self.engagement = engagement
 
     def create_observation(self):
-        return {'click': int(self.clicked), 'engagement': np.array(self.engagement)}
+        return {'click': int(self.clicked),
+                'engagement': np.array(self.engagement),
+                # 'memory_discount': self.memory_discount,
+                # 'sensitivity': self._user_state.sensitivity,
+                # 'innovation_stddev': self._user_state.innovation_stddev,
+                # 'choc_mean': self._user_state.choc_mean,
+                # 'choc_stddev': self._user_state.choc_stddev,
+                # 'net_kale_exposure': self.net_kaleness_exposure,
+                # 'time_budget': self._user_state.time_budget
+                }
 
     @classmethod
     def response_space(cls):
@@ -141,7 +150,35 @@ class LTSResponse(user.AbstractResponse):
                     low=0.0,
                     high=cls.MAX_ENGAGEMENT_MAGNITUDE,
                     shape=tuple(),
-                    dtype=np.float32)
+                    dtype=np.float32),
+            # 'memory_discount': spaces.Box(
+            #         low=0.0,
+            #         high=1.0,
+            #         dtype=np.float32),
+            #     'sensitivity': spaces.Box(
+            #         low=0.0,
+            #         high=1.0,
+            #         dtype=np.float32),
+            #     'innovation_stddev': spaces.Box(
+            #         low=0.0,
+            #         high=1.0,
+            #         dtype=np.float32),
+            #     'choc_mean': spaces.Box(
+            #         low=0.0,
+            #         high=10.0,
+            #         dtype=np.float32),
+            #     'choc_stddev': spaces.Box(
+            #         low=0.0,
+            #         high=1.0,
+            #         dtype=np.float32),
+            #     'net_kale_exposure': spaces.Box(
+            #         low=0.0,
+            #         high=10.0,
+            #         dtype=np.float32),
+            #     'time_budget': spaces.Box(
+            #         low=0,
+            #         high=100,
+            #         dtype=np.int),
         })
 
 

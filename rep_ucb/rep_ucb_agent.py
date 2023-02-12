@@ -394,8 +394,8 @@ class RepUCBAgent(object):
         self._record_observation(observation)
 
         if not self.eval_mode:
-            self._store_transition(
-                self._last_observation, self.action, reward, False)
+            # self._store_transition(
+            #     self._last_observation, self.action, reward, False)
             self._train_step()
 
         self.action = self._select_action()
