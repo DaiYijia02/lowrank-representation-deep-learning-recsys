@@ -1,6 +1,6 @@
 Low Rank Representation Deep Learning for Personalization and Recommendation Systems:
 =====================================================================================
-<img src="./recsys_flowchart.png" width="900" height="500">
+<img src="./recsys_flowchart.png" width="900">
 
 
 Description:
